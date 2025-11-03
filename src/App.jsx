@@ -132,7 +132,7 @@ function App() {
             </div>
           </div>
         </section>
-        <footer className="bg-linear-to-r to-[#CF4D53] from-[#280D39]  flex justify-center flex-col gap-2 items-center text-white px-4 sm:px-10 py-5 max-md:py-2 w-full ">
+        <footer className="bg-linear-to-r to-[#CF4D53] from-[#280D39]  flex justify-center flex-col gap-2 items-center text-white px-4 sm:px-10 py-5 w-full ">
           <p className="font-bold text-3xl max-lg:text-xl">
             Join the Rebellion.
           </p>
