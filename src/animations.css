@@ -1,0 +1,118 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 0 rgba(207, 77, 83, 0);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(207, 77, 83, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 0 rgba(207, 77, 83, 0);
+  }
+}
+
+@keyframes buttonPulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(207, 77, 83, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 10px rgba(207, 77, 83, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(207, 77, 83, 0);
+  }
+}
+
+@keyframes buttonGlow {
+  0% {
+    box-shadow: 0 0 5px #cf4d53, 0 0 10px #cf4d53, 0 0 15px #280d39;
+  }
+  50% {
+    box-shadow: 0 0 10px #cf4d53, 0 0 20px #cf4d53, 0 0 30px #280d39;
+  }
+  100% {
+    box-shadow: 0 0 5px #cf4d53, 0 0 10px #cf4d53, 0 0 15px #280d39;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+.animate-glowPulse {
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+.animate-buttonPulsate {
+  animation: buttonPulsate 2s ease-in-out infinite;
+}
+
+.animate-buttonGlow {
+  animation: buttonGlow 2s ease-in-out infinite;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-3 {
+  animation-delay: 0.6s;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
