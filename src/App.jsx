@@ -1,7 +1,7 @@
 import AutoScroll from "./components/AutoScroll";
 import Navbar from "./components/Navbar";
 import aboutImg from "./assets/about.png";
-import roadmapImg from "./assets/roadmap.svg";
+import roadmapImg from "./assets/Roadmap.svg";
 import Team from "./Team";
 import Gallery from "./Gallery";
 import { useEffect } from "react";
