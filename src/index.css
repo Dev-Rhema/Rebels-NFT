@@ -2,8 +2,8 @@
 
 /* Import local Space Grotesk font for the whole site */
 @font-face {
-  font-family: 'Space Grotesk';
-  src: url('./font/SpaceGrotesk-Regular.ttf') format('truetype');
+  font-family: "Space Grotesk";
+  src: url("./font/SpaceGrotesk-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -131,8 +131,7 @@
   body {
     @apply bg-background text-foreground;
     /* Use Space Grotesk across the site with sensible fallbacks */
-    font-family: 'Space Grotesk', system-ui, -apple-system, "Segoe UI",
-      Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
-      sans-serif;
+    font-family: "Space Grotesk", system-ui, -apple-system, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
   }
 }
