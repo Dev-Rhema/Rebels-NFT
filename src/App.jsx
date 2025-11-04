@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-      <main className="text-white flex-col flex gap-16 max-lg:gap-6 bg-[#050303]">
+      <main className="text-white flex-col flex gap-16 max-lg:gap-6 bg-[#050303] font-[SpaceFont]">
         <Navbar />
         {/* Banner */}
         <div className="relative h-[90vh] mt-14 flex justify-center items-center w-full ">

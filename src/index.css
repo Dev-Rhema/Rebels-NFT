@@ -128,10 +128,9 @@
   html {
     @apply scroll-smooth;
   }
-  body {
-    @apply bg-background text-foreground;
-    /* Use Space Grotesk across the site with sensible fallbacks */
-    font-family: "Space Grotesk", system-ui, -apple-system, "Segoe UI", Roboto,
-      "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  }
+}
+
+@font-face {
+  font-family: "SpaceFont";
+  src: url("src/font/SpaceGrotesk-Regular.ttf");
 }
