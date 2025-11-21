@@ -38,18 +38,15 @@ function App() {
           <div className="absolute inset-0 bg-[url(./assets/banner.jpg)] bg-cover  brightness-40"></div>
           <div className="absolute z-10 flex flex-col items-center justify-center gap-3 text-center px-4">
             <p className="text-5xl md:text-6xl lg:text-7xl font-bold animate-fadeInUp">
-              <span className="text-[#FFB4A1] animate-glowPulse">Rebels </span>
-              NFT Collection
+              <span className="text-[#FFB4A1] animate-glowPulse">Multi </span>
+              Staking NFT Protocol
             </p>
             <p className="text-md md:text-xl lg:text-2xl animate-fadeInUp animate-delay-1">
               Rewrite the Past. Defend the Future of digital unity on{" "}
               <span className="text-[#FFB4A1] animate-glowPulse">Monad</span>.
             </p>
-            <p className="text-xs md:text-sm font-bold animate-fadeInUp animate-delay-2">
-              JOIN THE REVOLUTION
-            </p>
             <button className="bg-linear-to-br from-[#280D39] to-[#CF4D53] text-white font-semibold text-base lg:text-lg py-2 px-4 rounded-md transition-all duration-300 cursor-pointer hover:scale-105 animate-fadeInUp animate-delay-3 animate-buttonPulsate animate-buttonGlow relative before:content-[''] before:absolute before:inset-0 before:bg-linear-to-br before:from-[#280D39] before:to-[#CF4D53] before:opacity-50 before:rounded-md before:z-[-1] before:blur-lg">
-              STAKE NFT
+              STAKE REBELS NFT
             </button>
           </div>
         </div>
@@ -57,33 +54,50 @@ function App() {
           {/* About */}
           <div
             id="about"
-            className="grid grid-cols-2 gap-4 items-center pt-16 max-md:grid-cols-1"
+            className="grid grid-cols-2 gap-4 items-center pt-16 max-lg:grid-cols-1"
           >
-            <img src={aboutImg} alt="" />
+            <div className="w-full max-w-md mx-auto">
+              <img
+                src={aboutImg}
+                alt="About rebels"
+                className="rounded-2xl shadow-2xl border border-white/5 w-full h-auto object-cover"
+              />
+            </div>
             <div className="gap-3 flex flex-col">
-              <h1 className="text-3xl md:text-6xl lg:text-[80px] mb-6 reveal-on-scroll max-lg:mb-2">
+              <h1 className="text-3xl md:text-6xl lg:text-[80px] mb-6 reveal-on-scroll max-lg:mb-2 max-lg:text-center">
                 ABOUT
-                <span className="text-[#CF5C62] animate-glowPulse"> US</span>
+                <span className="text-[#CF5C62] animate-glowPulse">
+                  {" "}
+                  REBELS
+                </span>
               </h1>
               <p className="text-md md:text-md lg:text-xl reveal-on-scroll">
-                We're here to build something solid. Great things aren't built
-                overnight. we focused on creating something meaningful, not a
-                quick flip project. If you are looking for fast wins, you might
-                want to look elsewhere.
+                Rebels is a next gen NFT project built on the Monad blockchain.
+                We’re creating a multi staking NFT protocol that gives holders
+                real utility. Our goal is to build tools that let people earn,
+                participate, and grow inside a fast and scalable ecosystem.
               </p>
-              <ul className="list-disc ml-4 text-base md:text-md reveal-on-scroll">
-                <li>Unique collection and style</li>
-                <li>Unrevealed Utility</li>
-                <li>Strong Monad Community</li>
-              </ul>
+              <p className="text-md md:text-md lg:text-xl reveal-on-scroll">
+                Rebels NFT collection is the heart of the platform. It’s your
+                access to staking opportunities, rewards and future products
+                that we will roll out over time. We’re focused on long term
+                value, not hype. Everything we build reflects that.
+              </p>
+              <p className="text-md md:text-md lg:text-xl reveal-on-scroll">
+                Our mission is to help users unlock the true power of NFTs by
+                turning them into yield generating assets.
+              </p>
+              <p className="text-md md:text-md lg:text-xl reveal-on-scroll">
+                Rebels is here to set a new standard for NFT utilities on Monad.
+              </p>
             </div>
           </div>
           {/* ROADMAP */}
           <div
             id="roadmap"
-            className="flex flex-col items-center justify-center "
+            className="flex flex-col items-center justify-center"
           >
-            <h1 className="text-3xl md:text-6xl lg:text-[80px] mb-6 reveal-on-scroll">
+            <h1 className="text-3xl md:text-6xl lg:text-[80px] mb-6 reveal-on-scroll text-center w-full">
               THE REBELLION{" "}
               <span className="text-[#CF5C62] animate-glowPulse">ROADMAP</span>
             </h1>
@@ -96,12 +110,14 @@ function App() {
             id="partners"
             className="flex flex-col items-center justify-center pt-16"
           >
-            <h1 className="text-3xl md:text-6xl lg:text-[80px] mb-6 reveal-on-scroll">
+            <h1 className="text-3xl md:text-6xl lg:text-[80px] mb-6 reveal-on-scroll text-center w-full">
               OUR{" "}
-              <span className="text-[#CF5C62] animate-glowPulse">PARTNERS</span>
+              <span className="text-[#CF5C62] animate-glowPulse">
+                {" "}
+                PARTNERS
+              </span>
             </h1>
             <div className="overflow-x-hidden">
-              {" "}
               <AutoScroll />{" "}
             </div>
           </div>
@@ -110,7 +126,7 @@ function App() {
             id="team"
             className="flex flex-col items-center justify-center pt-16"
           >
-            <h1 className="text-4xl md:text-6xl lg:text-[80px] reveal-on-scroll mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-[80px] reveal-on-scroll mb-6 text-center w-full">
               OUR <span className="text-[#CF5C62] animate-glowPulse">TEAM</span>
             </h1>
             <Team />

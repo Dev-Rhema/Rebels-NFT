@@ -50,7 +50,7 @@ function Team() {
       <ChromaGrid
         items={items}
         radius={300}
-        damping={0.45}
+        damping={0.85}
         fadeOut={0.6}
         ease="power3.out"
       />

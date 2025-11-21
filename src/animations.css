@@ -159,7 +159,11 @@
 
 .marquee-mask {
   position: relative;
-  overflow: hidden;
+  /* constrain width to viewport and hide any horizontal overflow from marquee internals */
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .marquee-mask::before,
@@ -236,6 +240,7 @@
 .marquee-back {
   position: absolute;
   left: 0;
+  right: 0;
   top: 40%;
   width: 100%;
   z-index: 10;
@@ -247,4 +252,17 @@
 
 .marquee-back .auto-img {
   transform-origin: center;
+}
+
+/* Ensure marquee internals don't expand the layout unexpectedly */
+.marquee-mask .react-fast-marquee,
+.marquee-mask .react-fast-marquee__track {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.marquee-mask img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

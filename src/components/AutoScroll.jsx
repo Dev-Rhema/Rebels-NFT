@@ -18,7 +18,7 @@ function AutoScroll() {
   ];
 
   return (
-    <div className="text-center">
+    <div className="text-center overflow-x-hidden">
       <div className="marquee-mask">
         <Marquee speed={48} delay={0} pauseOnHover gradient={false}>
           {images.map((src, index) => {
