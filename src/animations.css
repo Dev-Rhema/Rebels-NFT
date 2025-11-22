@@ -111,7 +111,7 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   /* default duration — can be overridden by inline style `animationDuration` */
-  animation-duration: 5s;
+  animation-duration: 2s;
   background-repeat: no-repeat;
 }
 
