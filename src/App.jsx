@@ -40,12 +40,17 @@ function App() {
           <div className="absolute inset-0 bg-[url(./assets/banner.jpg)] bg-cover  brightness-40"></div>
           <div className="absolute z-10 flex flex-col items-center justify-center gap-3 text-center px-4">
             <p className="text-5xl md:text-6xl lg:text-7xl font-bold animate-fadeInUp">
-              <span className="text-[#FFB4A1] ">Multi</span> Staking NFT
-              Protocol
+              <span className="text-[#FFB4A1] ">
+                <ShinyText text="Multi" />
+              </span>{" "}
+              Staking NFT Protocol
             </p>
             <p className="text-md md:text-xl lg:text-2xl animate-fadeInUp animate-delay-1">
               Rewrite the Past. Defend the Future of digital unity on{" "}
-              <span className="text-[#FFB4A1] animate-glowPulse">Monad</span>.
+              <span className="text-[#FFB4A1] animate-glowPulse">
+                <ShinyText text="Monad" />
+              </span>
+              .
             </p>
             <button className="bg-linear-to-br from-[#280D39] to-[#CF4D53] text-white font-semibold text-base lg:text-lg py-2 px-4 rounded-md transition-all duration-300 cursor-pointer hover:scale-105 animate-fadeInUp animate-delay-3 animate-buttonPulsate animate-buttonGlow relative before:content-[''] before:absolute before:inset-0 before:bg-linear-to-br before:from-[#280D39] before:to-[#CF4D53] before:opacity-50 before:rounded-md before:z-[-1] before:blur-lg">
               STAKE REBELS NFT
