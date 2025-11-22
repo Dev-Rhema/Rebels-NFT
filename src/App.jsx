@@ -1,12 +1,14 @@
 import AutoScroll from "./components/AutoScroll";
 import Navbar from "./components/Navbar";
-import aboutImg from "./assets/about.png";
 import roadmapImg from "./assets/Roadmap.svg";
 import Team from "./Team";
 import Gallery from "./Gallery";
 import { useEffect } from "react";
 import "./animations.css";
 import MobileGallery from "./MobileGallery";
+import AboutCarousel from "./components/AboutCarousel";
+import { AuroraText } from "./components/AuroraTexts";
+import ShinyText from "./components/ShinyText";
 
 function App() {
   useEffect(() => {
@@ -38,8 +40,8 @@ function App() {
           <div className="absolute inset-0 bg-[url(./assets/banner.jpg)] bg-cover  brightness-40"></div>
           <div className="absolute z-10 flex flex-col items-center justify-center gap-3 text-center px-4">
             <p className="text-5xl md:text-6xl lg:text-7xl font-bold animate-fadeInUp">
-              <span className="text-[#FFB4A1] animate-glowPulse">Multi </span>
-              Staking NFT Protocol
+              <span className="text-[#FFB4A1] ">Multi</span> Staking NFT
+              Protocol
             </p>
             <p className="text-md md:text-xl lg:text-2xl animate-fadeInUp animate-delay-1">
               Rewrite the Past. Defend the Future of digital unity on{" "}
@@ -57,38 +59,36 @@ function App() {
             className="grid grid-cols-2 gap-4 items-center pt-16 max-lg:grid-cols-1"
           >
             <div className="w-full max-w-md mx-auto">
-              <img
-                src={aboutImg}
-                alt="About rebels"
-                className="rounded-2xl shadow-2xl border border-white/5 w-full h-auto object-cover"
-              />
+              <AboutCarousel />
             </div>
             <div className="gap-3 flex flex-col">
               <h1 className="text-3xl md:text-6xl lg:text-[80px] mb-6 reveal-on-scroll max-lg:mb-2 max-lg:text-center">
-                ABOUT
-                <span className="text-[#CF5C62] animate-glowPulse">
-                  {" "}
-                  REBELS
-                </span>
+                <span className="text-white  animate-glowPulse"> ABOUT</span>{" "}
+                <AuroraText>REBELS</AuroraText>
               </h1>
               <p className="text-md md:text-md lg:text-xl reveal-on-scroll">
-                Rebels is a next gen NFT project built on the Monad blockchain.
-                We’re creating a multi staking NFT protocol that gives holders
-                real utility. Our goal is to build tools that let people earn,
-                participate, and grow inside a fast and scalable ecosystem.
+                <ShinyText text="Rebels" /> is a next gen NFT project built on
+                the <ShinyText text="Monad" /> blockchain. We’re creating a{" "}
+                <ShinyText text=" multi staking NFT protocol" /> that gives
+                holders real utility. Our goal is to build tools that let people
+                <ShinyText text="earn" />, <ShinyText text=" participate" />,
+                and <ShinyText text="grow" /> inside a fast and scalable
+                ecosystem.
               </p>
               <p className="text-md md:text-md lg:text-xl reveal-on-scroll">
-                Rebels NFT collection is the heart of the platform. It’s your
-                access to staking opportunities, rewards and future products
-                that we will roll out over time. We’re focused on long term
-                value, not hype. Everything we build reflects that.
+                <ShinyText text="Rebels NFT" /> collection is the heart of the
+                platform. It’s your access to{" "}
+                <ShinyText text="staking opportunities" />, rewards and future
+                products that we will roll out over time. We’re focused on long
+                term value, not hype. Everything we build reflects that.
               </p>
               <p className="text-md md:text-md lg:text-xl reveal-on-scroll">
                 Our mission is to help users unlock the true power of NFTs by
-                turning them into yield generating assets.
+                turning them into <ShinyText text="yield generating assets" /> .
               </p>
               <p className="text-md md:text-md lg:text-xl reveal-on-scroll">
-                Rebels is here to set a new standard for NFT utilities on Monad.
+                <ShinyText text="Rebels" /> is here to set a new standard for
+                NFT utilities on Monad.
               </p>
             </div>
           </div>
@@ -98,8 +98,7 @@ function App() {
             className="flex flex-col items-center justify-center"
           >
             <h1 className="text-3xl md:text-6xl lg:text-[80px] mb-6 reveal-on-scroll text-center w-full">
-              THE REBELLION{" "}
-              <span className="text-[#CF5C62] animate-glowPulse">ROADMAP</span>
+              THE REBELLION <AuroraText>ROADMAP</AuroraText>
             </h1>
             <div className="size-[60%] max-lg:w-[80%] max-md:w-full">
               <img src={roadmapImg} alt="" />
@@ -111,11 +110,7 @@ function App() {
             className="flex flex-col items-center justify-center pt-16"
           >
             <h1 className="text-3xl md:text-6xl lg:text-[80px] mb-6 reveal-on-scroll text-center w-full">
-              OUR{" "}
-              <span className="text-[#CF5C62] animate-glowPulse">
-                {" "}
-                PARTNERS
-              </span>
+              OUR <AuroraText>PARTNERS</AuroraText>
             </h1>
             <div className="overflow-x-hidden">
               <AutoScroll />{" "}
@@ -127,7 +122,7 @@ function App() {
             className="flex flex-col items-center justify-center pt-16"
           >
             <h1 className="text-4xl md:text-6xl lg:text-[80px] reveal-on-scroll mb-6 text-center w-full">
-              OUR <span className="text-[#CF5C62] animate-glowPulse">TEAM</span>
+              OUR <AuroraText>TEAM</AuroraText>
             </h1>
             <Team />
           </div>
@@ -137,8 +132,7 @@ function App() {
             className="flex flex-col items-center justify-center overflow-x-none pt-16 mb-10"
           >
             <h1 className="text-4xl md:text-6xl lg:text-[80px] reveal-on-scroll mb-6">
-              SNEAK{" "}
-              <span className="text-[#CF5C62] animate-glowPulse">PEAK</span>
+              SNEAK <AuroraText>PEAK</AuroraText>
             </h1>
             <div className="max-lg:hidden">
               <Gallery />

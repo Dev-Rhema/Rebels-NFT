@@ -94,6 +94,27 @@
   animation: buttonGlow 2s ease-in-out infinite;
 }
 
+/* Shiny text animation used by `ShinyText.jsx` */
+@keyframes shine {
+  0% {
+    /* start far to the right, vertically centered */
+    background-position: 200% 50%;
+  }
+  100% {
+    /* move to far left, vertically centered */
+    background-position: -200% 50%;
+  }
+}
+
+.animate-shine {
+  animation-name: shine;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* default duration — can be overridden by inline style `animationDuration` */
+  animation-duration: 5s;
+  background-repeat: no-repeat;
+}
+
 .animate-delay-1 {
   animation-delay: 0.2s;
 }
