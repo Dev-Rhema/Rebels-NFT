@@ -134,6 +134,7 @@ const ChromaGrid = ({
         "--r": `${radius}px`,
         "--x": "50%",
         "--y": "50%",
+        contain: "layout style paint",
       }}
     >
       {data.map((c, i) => (

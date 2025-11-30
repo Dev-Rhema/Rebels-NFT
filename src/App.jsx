@@ -2,13 +2,22 @@ import AutoScroll from "./components/AutoScroll";
 import Navbar from "./components/Navbar";
 import { getImageUrl } from "./utils/imageResolver";
 import Team from "./Team";
-import Gallery from "./Gallery";
-import { useEffect } from "react";
+import { useEffect, Suspense, lazy } from "react";
 import "./animations.css";
-import MobileGallery from "./MobileGallery";
 import AboutCarousel from "./components/AboutCarousel";
 import { AuroraText } from "./components/AuroraTexts";
 import ShinyText from "./components/ShinyText";
+
+// Lazy load heavy gallery components
+const Gallery = lazy(() => import("./Gallery"));
+const MobileGallery = lazy(() => import("./MobileGallery"));
+
+// Loading placeholder
+const GalleryLoader = () => (
+  <div className="w-full h-screen flex items-center justify-center bg-[#050303]">
+    <div className="animate-pulse text-gray-400">Loading gallery...</div>
+  </div>
+);
 
 function App() {
   const roadmapImg = getImageUrl("Roadmap.svg");
@@ -141,12 +150,14 @@ function App() {
             <h1 className="text-4xl md:text-6xl lg:text-[80px] reveal-on-scroll mb-6">
               SNEAK <AuroraText>PEAK</AuroraText>
             </h1>
-            <div className="max-lg:hidden">
-              <Gallery />
-            </div>
-            <div className="max-lg:block hidden">
-              <MobileGallery />
-            </div>
+            <Suspense fallback={<GalleryLoader />}>
+              <div className="max-lg:hidden">
+                <Gallery />
+              </div>
+              <div className="max-lg:block hidden">
+                <MobileGallery />
+              </div>
+            </Suspense>
           </div>
         </section>
         <footer className="bg-linear-to-r to-[#CF4D53] from-[#280D39]  flex justify-center flex-col gap-2 items-center text-white px-4 sm:px-10 py-5 w-full ">
