@@ -39,7 +39,7 @@ function App() {
         <Navbar />
         {/* Banner */}
         <div className="relative h-[90vh] mt-14 flex justify-center items-center w-full ">
-          <div className="absolute inset-0 bg-[url(./assets/banner.jpg)] bg-cover  brightness-40"></div>
+          <div className="absolute inset-0 brightness-40" style={{ backgroundImage: `url(${getImageUrl("banner.jpg")})`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
           <div className="absolute z-10 flex flex-col items-center justify-center gap-3 text-center px-4">
             <p className="text-5xl md:text-6xl lg:text-7xl font-bold animate-fadeInUp">
               <span className="text-[#FFB4A1] ">

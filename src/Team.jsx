@@ -1,12 +1,10 @@
 import ChromaGrid from "./components/ChromaGrid.jsx";
 import React from "react";
-import team1 from "./assets/mav.png";
-import team2 from "./assets/0xSikdar.webp";
-import team3 from "./assets/vexorith.webp";
+import { getImageUrl } from "./utils/imageResolver";
 
 const items = [
   {
-    image: team1,
+    image: getImageUrl("mav.png"),
     title: "Mav",
     subtitle: "Founder",
     handle: "@mav_evm",
@@ -15,7 +13,7 @@ const items = [
     url: "https://x.com/mav_evm",
   },
   {
-    image: team2,
+    image: getImageUrl("0xSikdar.webp"),
     title: "0xSikdar",
     subtitle: "Co Founder",
     handle: "@0xsikdar",
@@ -24,7 +22,7 @@ const items = [
     url: "https://x.com/0xsikdar",
   },
   {
-    image: team3,
+    image: getImageUrl("vexorith.webp"),
     title: "Vexorith",
     subtitle: "Developer",
     handle: "@Vexorith_",
