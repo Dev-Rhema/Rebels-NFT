@@ -4,17 +4,47 @@ import Marquee from "react-fast-marquee";
 
 import partner1 from "../assets/partner1.jpg";
 import partner2 from "../assets/partner2.jpg";
+import partner3 from "../assets/partner3.jpg";
+import partner4 from "../assets/partner4.jpg";
+import partner5 from "../assets/partner5.jpg";
+import partner6 from "../assets/partner6.jpg";
+import partner7 from "../assets/partner7.jpg";
+import partner8 from "../assets/partner8.jpg";
+import partner9 from "../assets/partner9.jpg";
+import partner10 from "../assets/partner10.jpg";
+import partner11 from "../assets/partner11.jpg";
+import partner12 from "../assets/partner12.jpg";
+import partner13 from "../assets/partner13.jpg";
+import partner14 from "../assets/partner14.jpg";
+import partner15 from "../assets/partner15.jpg";
+import partner16 from "../assets/partner16.jpg";
+import partner17 from "../assets/partner17.jpg";
+import partner18 from "../assets/partner18.jpg";
+import partner19 from "../assets/partner19.jpg";
+import partner20 from "../assets/partner20.jpg";
 
 function AutoScroll() {
   const images = [
     partner1,
     partner2,
-    partner1,
-    partner2,
-    partner1,
-    partner2,
-    partner1,
-    partner2,
+    partner3,
+    partner4,
+    partner5,
+    partner6,
+    partner7,
+    partner8,
+    partner9,
+    partner10,
+    partner11,
+    partner12,
+    partner13,
+    partner14,
+    partner15,
+    partner16,
+    partner17,
+    partner18,
+    partner19,
+    partner20,
   ];
 
   return (

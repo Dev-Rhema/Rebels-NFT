@@ -1,9 +1,8 @@
 import ChromaGrid from "./components/ChromaGrid.jsx";
 import React from "react";
-import team1 from "./assets/peak1.svg";
-import team2 from "./assets/peak2.svg";
-import team3 from "./assets/peak3.svg";
-import team4 from "./assets/peak4.svg";
+import team1 from "./assets/mav.png";
+import team2 from "./assets/0xSikdar.webp";
+import team3 from "./assets/vexorith.webp";
 
 const items = [
   {
@@ -17,30 +16,21 @@ const items = [
   },
   {
     image: team2,
-    title: "Alex",
-    subtitle: "Community Manager",
-    handle: "@Alex",
+    title: "0xSikdar",
+    subtitle: "Co Founder",
+    handle: "@0xsikdar",
     borderColor: "#10B981",
     gradient: "linear-gradient(210deg,#10B981,#000)",
-    url: "https://x.com/mav_evm",
+    url: "https://x.com/0xsikdar",
   },
   {
     image: team3,
-    title: "Jane",
-    subtitle: "Artist",
-    handle: "@Jane",
+    title: "Vexorith",
+    subtitle: "Developer",
+    handle: "@Vexorith_",
     borderColor: "#F59E0B",
     gradient: "linear-gradient(165deg,#F59E0B,#000)",
-    url: "https://x.com/mav_evm",
-  },
-  {
-    image: team4,
-    title: "John",
-    subtitle: "Collab Manager",
-    handle: "@John",
-    borderColor: "#EF4444",
-    gradient: "linear-gradient(195deg,#EF4444,#000)",
-    url: "https://x.com/mav_evm",
+    url: "https://x.com/vexorith_",
   },
 ];
 
