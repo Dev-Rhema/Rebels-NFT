@@ -7,6 +7,7 @@ import "./animations.css";
 import AboutCarousel from "./components/AboutCarousel";
 import { AuroraText } from "./components/AuroraTexts";
 import ShinyText from "./components/ShinyText";
+import Footer2 from "./components/Footer";
 
 // Lazy load heavy gallery components
 const Gallery = lazy(() => import("./Gallery"));
@@ -48,7 +49,14 @@ function App() {
         <Navbar />
         {/* Banner */}
         <div className="relative h-[90vh] mt-14 flex justify-center items-center w-full ">
-          <div className="absolute inset-0 brightness-40" style={{ backgroundImage: `url(${getImageUrl("banner.jpg")})`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
+          <div
+            className="absolute inset-0 brightness-40"
+            style={{
+              backgroundImage: `url(${getImageUrl("banner.jpg")})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
           <div className="absolute z-10 flex flex-col items-center justify-center gap-3 text-center px-4">
             <p className="text-5xl md:text-6xl lg:text-7xl font-bold animate-fadeInUp">
               <span className="text-[#FFB4A1] ">
@@ -160,20 +168,7 @@ function App() {
             </Suspense>
           </div>
         </section>
-        <footer className="bg-linear-to-r to-[#CF4D53] from-[#280D39]  flex justify-center flex-col gap-2 items-center text-white px-4 sm:px-10 py-5 w-full ">
-          <p className="font-bold text-3xl max-lg:text-xl">
-            Join the Rebellion.
-          </p>
-          <div>Socials</div>
-          <div className="flex gap-2">
-            <button className="bg-white text-black text-base max-lg:text-sm lg:text-md py-2 px-4 rounded-md transition-all duration-300 cursor-pointer hover:scale-105">
-              <a href="https://discord.gg/Gvd6jAXS">Join Discord</a>
-            </button>
-            <button className="bg-white text-black text-base max-lg:text-sm lg:text-md py-2 px-4 rounded-md transition-all duration-300 cursor-pointer hover:scale-105">
-              <a href="https://x.com/rebels_xyz">Follow us on X</a>
-            </button>
-          </div>
-        </footer>
+        <Footer2 />
       </main>
     </>
   );
