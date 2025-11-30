@@ -1,39 +1,34 @@
 import { useEffect, useMemo, useRef, useCallback } from "react";
 import { useGesture } from "@use-gesture/react";
-import peak1 from "../assets/peak1.svg";
-import peak2 from "../assets/peak2.svg";
-import peak3 from "../assets/peak3.svg";
-import peak4 from "../assets/peak4.svg";
-import peak5 from "../assets/peak5.svg";
-import peak6 from "../assets/peak6.svg";
+import { getImageUrl } from "../utils/imageResolver";
 
 const DEFAULT_IMAGES = [
   {
-    src: peak1,
+    src: getImageUrl("peak1.svg"),
     alt: "peak1",
   },
   {
-    src: peak2,
+    src: getImageUrl("peak2.svg"),
     alt: "peak2",
   },
   {
-    src: peak3,
+    src: getImageUrl("peak3.svg"),
     alt: "peak3",
   },
   {
-    src: peak4,
+    src: getImageUrl("peak4.svg"),
     alt: "peak4",
   },
   {
-    src: peak4,
+    src: getImageUrl("peak4.svg"),
     alt: "peak4",
   },
   {
-    src: peak5,
+    src: getImageUrl("peak5.svg"),
     alt: "peak5",
   },
   {
-    src: peak6,
+    src: getImageUrl("peak6.svg"),
     alt: "peak6",
   },
 ];

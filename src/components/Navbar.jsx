@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import logo from "../assets/Logo.png";
+import { getImageUrl } from "../utils/imageResolver";
+
+const logoUrl = getImageUrl("Logo.png");
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +17,11 @@ function Navbar() {
   return (
     <nav className="bg-linear-to-r from-[#CF4D53] to-[#280D39] flex justify-between items-center text-white px-4 sm:px-10 py-3 max-md:py-2 fixed top-0 left-0 w-full backdrop-blur-sm bg-opacity-90 z-10000">
       <div className="logo flex items-center justify-center gap-2 text-lg sm:text-xl lg:text-2xl font-bold tracking-wide">
-        <img src={logo} alt="" className="size-10 max-md:size-6" />
+        <img
+          src={logoUrl}
+          alt="Rebels Logo"
+          className="size-10 max-md:size-6"
+        />
         <p className="text-3xl text-[#280D39] font-black max-md:text-2xl">
           REBELS
         </p>

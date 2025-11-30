@@ -1,21 +1,19 @@
 import React, { useState, useEffect } from "react";
-import about1 from "../assets/peak1.svg";
-import about2 from "../assets/peak2.svg";
-import about3 from "../assets/peak3.svg";
+import { getImageUrl } from "../utils/imageResolver";
 
 export default function AboutCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const imageMap = {
+    peak1: getImageUrl("peak1.svg"),
+    peak2: getImageUrl("peak2.svg"),
+    peak3: getImageUrl("peak3.svg"),
+  };
+
   const cards = [
-    {
-      image: about1,
-    },
-    {
-      image: about2,
-    },
-    {
-      image: about3,
-    },
+    { image: imageMap.peak1 },
+    { image: imageMap.peak2 },
+    { image: imageMap.peak3 },
   ];
 
   useEffect(() => {

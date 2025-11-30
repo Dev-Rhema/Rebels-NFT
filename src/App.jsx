@@ -1,6 +1,6 @@
 import AutoScroll from "./components/AutoScroll";
 import Navbar from "./components/Navbar";
-import roadmapImg from "./assets/Roadmap.svg";
+import { getImageUrl } from "./utils/imageResolver";
 import Team from "./Team";
 import Gallery from "./Gallery";
 import { useEffect } from "react";
@@ -11,6 +11,8 @@ import { AuroraText } from "./components/AuroraTexts";
 import ShinyText from "./components/ShinyText";
 
 function App() {
+  const roadmapImg = getImageUrl("Roadmap.svg");
+
   useEffect(() => {
     const observerCallback = (entries) => {
       entries.forEach((entry) => {
