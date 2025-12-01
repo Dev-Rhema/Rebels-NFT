@@ -72,10 +72,13 @@ function App() {
               </span>
               .
             </p>
-            <a href="https://stake.rebelsnft.xyz/" className="text-white">
-              <button className="bg-linear-to-br from-[#280D39] to-[#CF4D53] text-white font-semibold text-base lg:text-lg py-2 px-4 rounded-md transition-all duration-300 cursor-pointer hover:scale-105 animate-fadeInUp animate-delay-3 animate-buttonPulsate animate-buttonGlow relative before:content-[''] before:absolute before:inset-0 before:bg-linear-to-br before:from-[#280D39] before:to-[#CF4D53] before:opacity-50 before:rounded-md before:z-[-1] before:blur-lg">
-                STAKE REBELS NFT
-              </button>
+            <a
+              href="https://stake.rebelsnft.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-linear-to-br from-[#280D39] to-[#CF4D53] text-white font-semibold text-base lg:text-lg py-2 px-4 rounded-md transition-all duration-300 hover:scale-105 animate-fadeInUp animate-delay-3 animate-buttonPulsate animate-buttonGlow relative before:content-[''] before:absolute before:inset-0 before:bg-linear-to-br before:from-[#280D39] before:to-[#CF4D53] before:opacity-50 before:rounded-md before:z-[-1] before:blur-lg text-center"
+            >
+              STAKE REBELS NFT
             </a>
           </div>
         </div>
