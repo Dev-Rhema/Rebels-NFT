@@ -8,6 +8,7 @@ import AboutCarousel from "./components/AboutCarousel";
 import { AuroraText } from "./components/AuroraTexts";
 import ShinyText from "./components/ShinyText";
 import Footer2 from "./components/Footer";
+import roadmap from "./roadmap.svg";
 
 // Lazy load heavy gallery components
 const Gallery = lazy(() => import("./Gallery"));
@@ -71,9 +72,11 @@ function App() {
               </span>
               .
             </p>
-            <button className="bg-linear-to-br from-[#280D39] to-[#CF4D53] text-white font-semibold text-base lg:text-lg py-2 px-4 rounded-md transition-all duration-300 cursor-pointer hover:scale-105 animate-fadeInUp animate-delay-3 animate-buttonPulsate animate-buttonGlow relative before:content-[''] before:absolute before:inset-0 before:bg-linear-to-br before:from-[#280D39] before:to-[#CF4D53] before:opacity-50 before:rounded-md before:z-[-1] before:blur-lg">
-              STAKE REBELS NFT
-            </button>
+            <a href="https://stake.rebelsnft.xyz/" className="text-white">
+              <button className="bg-linear-to-br from-[#280D39] to-[#CF4D53] text-white font-semibold text-base lg:text-lg py-2 px-4 rounded-md transition-all duration-300 cursor-pointer hover:scale-105 animate-fadeInUp animate-delay-3 animate-buttonPulsate animate-buttonGlow relative before:content-[''] before:absolute before:inset-0 before:bg-linear-to-br before:from-[#280D39] before:to-[#CF4D53] before:opacity-50 before:rounded-md before:z-[-1] before:blur-lg">
+                STAKE REBELS NFT
+              </button>
+            </a>
           </div>
         </div>
         <section className="bg-[#050303] h-full w-full px-10 flex items-center justify-center flex-col gap-20 max-lg:gap-12 max-md:px-6 ">
@@ -125,7 +128,7 @@ function App() {
               THE REBELLION <AuroraText>ROADMAP</AuroraText>
             </h1>
             <div className="size-[60%] max-lg:w-[80%] max-md:w-full">
-              <img src={roadmapImg} alt="" />
+              <img src={roadmap} alt="" />
             </div>
           </div>
           {/* REBEL PARTNERS */}
