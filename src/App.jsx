@@ -8,7 +8,7 @@ import AboutCarousel from "./components/AboutCarousel";
 import { AuroraText } from "./components/AuroraTexts";
 import ShinyText from "./components/ShinyText";
 import Footer2 from "./components/Footer";
-import roadmap from "./roadmap.svg";
+import roadmap from "./Roadmap.svg";
 
 // Lazy load heavy gallery components
 const Gallery = lazy(() => import("./Gallery"));
