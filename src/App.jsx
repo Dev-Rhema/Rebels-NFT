@@ -162,7 +162,7 @@ function App() {
             className="flex flex-col items-center justify-center overflow-x-none pt-16 mb-10"
           >
             <h1 className="text-4xl md:text-6xl lg:text-[80px] reveal-on-scroll mb-6">
-              SNEAK <AuroraText>PEAK</AuroraText>
+              SNEAK <AuroraText>PEEK</AuroraText>
             </h1>
             <Suspense fallback={<GalleryLoader />}>
               <div className="max-lg:hidden">
