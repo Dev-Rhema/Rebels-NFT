@@ -118,7 +118,7 @@ export default function DomeGallery({
   minRadius = 750,
   maxRadius = Infinity,
   padFactor = 0.25,
-  overlayBlurColor = "#060010",
+  overlayBlurColor = "#000",
   maxVerticalRotationDeg = DEFAULTS.maxVerticalRotationDeg,
   dragSensitivity = DEFAULTS.dragSensitivity,
   enlargeTransitionMs = DEFAULTS.enlargeTransitionMs,
@@ -632,7 +632,7 @@ export default function DomeGallery({
     overlay.style.transition = `transform ${enlargeTransitionMs}ms ease, opacity ${enlargeTransitionMs}ms ease`;
     overlay.style.borderRadius = openedImageBorderRadius;
     overlay.style.overflow = "hidden";
-    overlay.style.boxShadow = "0 10px 30px rgba(0,0,0,.35)";
+    overlay.style.boxShadow = "0 10px 30px rgba(0,0,0,0.35)";
 
     const rawSrc = parent.dataset.src || el.querySelector("img")?.src || "";
     const rawAlt = parent.dataset.alt || el.querySelector("img")?.alt || "";
